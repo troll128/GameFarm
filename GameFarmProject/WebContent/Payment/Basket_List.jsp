@@ -363,7 +363,8 @@ text-align: center;
 						<td class="tgoods"><a  id="goodsName" href="./Goods.go?goods_id=<%=basket.getGoods_id()%>&platform=<%=basket.getGoods_platform()%>&type=<%=basket.getGoods_type()%>"><%=basket.getGoods_name()%></a>
 						<input type="hidden" id="goods_id" id="goods_id" value="<%=basket.getGoods_id()%>"></td>
 						<!-- 개수 -->
-						<td class="count"><%=basket.getGoods_count()%><br>						
+						<td class="count"><%=basket.getGoods_count()%><br>
+						<input type="hidden" id="count" name="count" value="<%=basket.getGoods_count()%>">					
 						</td>
 						<!-- 가격 -->
 						<td class="money"><input type="text" id="money" name="money" value="<%=basket.getGoods_price()%>" readonly
